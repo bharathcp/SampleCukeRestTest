@@ -4,7 +4,7 @@ This is a sample project to demonstrate the use of [CukeRestSalad](https://githu
 
 To run this sample project, Please run the below commands:
 ```shell
-cd gitClonePath>/SampleCukeRestTest
+cd gitClonePath/SampleCukeRestTest
 sh gradlew clean build
 unzip build/distributions/SampleCukeRestTest-1.0.zip -d build/distributions/
 sh build/distributions/SampleCukeRestTest-1.0/bin/SampleCukeRestTest com.bdd.restsalad.steps.Runner
