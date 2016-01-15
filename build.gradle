@@ -15,7 +15,8 @@ jar {
 repositories { mavenCentral() }
 
 dependencies {
-  compile project(':CukeRestSalad')
+  //compile project(':CukeRestSalad')
+  compile('org.cukesalad:CukeRestSalad:1.0.2')
 }
 mainClassName = "org.junit.runner.JUnitCore"
 

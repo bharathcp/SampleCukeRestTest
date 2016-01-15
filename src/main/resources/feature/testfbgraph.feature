@@ -14,6 +14,9 @@ Feature: A feature to demonstrate REST cucumber util by testing FB graph api /me
       | Content-Type | application/json |
     And I retrieve the resource
     Then the status code returned should be 400
+    And The response should contain following headers:
+      | headerName   | headerValue      |
+      | Content-Type | application/json; charset=UTF-8 |
     And The response should contain "$..error.message" with value "Invalid OAuth access token."
     And The response should contain "$..error.type" with value "OAuthException"
     And The response should contain "$..error.code" with value "190"
